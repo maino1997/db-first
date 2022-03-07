@@ -1,0 +1,8 @@
+AUTO
+
+colonne      tipodato       attributi                     index
+
+key           BIGINT        NOTNULL AUTOINCREMENT UNIQUE  PRIMARY KEY
+auto_brand    VARCHAR(30)   NOTNULL 
+auto_model    VARCHAR(40)   NOTNULL UNIQUE
+used          VARCHAR(1)    NOTNULL DEAFAULT(false)
