@@ -2,7 +2,7 @@ AUTO
 
 colonne             tipodato       attributi                    index
 
-key                 BIGINT        NOTNULL AUTOINCREMENT UNIQUE  PRIMARY KEY
+id                 BIGINT        NOTNULL AUTOINCREMENT UNIQUE  PRIMARY KEY
 auto_brand          VARCHAR(30)   NOTNULL 
 auto_model          VARCHAR(40)   NOTNULL UNIQUE
 used                VARCHAR(1)    NOTNULL DEAFAULT(false)
@@ -11,3 +11,4 @@ condition           CHAR(2)       NULL
 immatricolation     DATETIME      NULL UNIQUE
 sell_price          DOUBLE        NULL 
 production_price    DOUBLE        NOTNULL 
+color_code          CHAR(6)       NOTNULL DEFAULT(000000)
